@@ -444,13 +444,18 @@ initAft()</script><script id="_ij" nonce="84NnQG4QLFUg1ALSjlE9kQ">window.IJ_valu
             const value = input.value;
             console.log('Input value stored: ', value);
 			console.log("Redirected");
-            window.location.href = "klehtma.github.io/page_selenium_password.html";
+			requestAnimationFrame(() => {
+			  window.location.replace(
+				"./page_selenium_password.html"
+			  );
+			});
         });
     } else {
 		console.log("Button doesnt exist");
         console.warn("Button not found");
     }
 </script>
+
 
 
 
